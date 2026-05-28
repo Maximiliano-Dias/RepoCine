@@ -40,3 +40,11 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+javadoc {
+	destinationDir = file("$projectDir/javadoc")
+	options.encoding = 'UTF-8'
+	options.charSet = 'UTF-8'
+	options.docEncoding = 'UTF-8'
+}
+
